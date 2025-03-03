@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Typing Clash</title>
+    <title>Typing Battle</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/17572/17572161.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
 <body>
     <div id="app">
         <header>
-            <h1>Typing Clash</h1>
+            <h1>Typing Battle</h1>
             <nav>
                 <button id="aboutBtn">About</button>
             </nav>
@@ -46,9 +47,9 @@
             style="width: 100px; height: 100px; border-radius: 50%;">
             <p>
             Hi, I'm <span class="glitter">Chayan</span>, and <span class="glitter">Grok</span> helped me create
-            Typing Clash—a real-time multiplayer typing competition game.
+            Typing Battle—a real-time multiplayer typing competition game.
 
-            With Typing Clash, you can challenge your friends to a fast-paced typing battle. Simply create a game,
+            With Typing Battle, you can challenge your friends to a fast-paced typing battle. Simply create a game,
             share the link, and compete in real-time to see who types the fastest. At the end of each match, the
             results display everyone’s Words Per Minute (WPM), declaring the ultimate typing champion.
 
@@ -71,17 +72,20 @@
 <!--             <a href="https://askmeany.vercel.app" id="askMeBtn" target="_blank" rel="noopener">Ask Me</a> -->
             <a href="https://askmeany.vercel.app" target="_blank" rel="noopener">
                 <button class="iconButton">
-                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828817.png" alt="Ask Me" class="iconImage">
+                    <img src="https://cdn-icons-png.flaticon.com/128/13161/13161797.png" alt="Ask Me" class="iconImage">
                 </button>
             </a>
         </div>
         <style>
-            .glitter {
-            background-image: linear-gradient(45deg, #f3ec78, #af4261);
-            background-clip: text;
+             .glitter {
+            background-image: linear-gradient(45deg, #f3ec78, #af4261, #f3ec78, #af4261);
+            background-size: 200% 200%;
             -webkit-background-clip: text;
+            background-clip: text;
             color: transparent;
-            animation: glitter 1.5s infinite;
+            animation: glitter 2s linear infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 1.2em;
             }
 
             @keyframes glitter {
