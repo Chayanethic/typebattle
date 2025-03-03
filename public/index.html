@@ -31,7 +31,7 @@
                 <div id="typingProgress"></div>
             </div>
             <textarea id="typingInput" rows="4" cols="50" placeholder="Start typing..." disabled></textarea>
-            <button id="soundToggle" title="Toggle Sound"><i class="fas fa-microphone"></i></button>
+            <button id="soundToggle" title="Toggle Sound"><i class="fa-solid fa-volume-low"></i></button>
             <div id="players"></div>
             <div id="winner" style="display: none;"></div>
             <div id="wpmResults" style="display: none;"></div>
@@ -42,9 +42,84 @@
         </div>
         <div id="about" style="display: none;">
             <h2>About the Creator</h2>
-            <img src="https://via.placeholder.com/150" alt="Creator" id="creatorImg">
-            <p>Hi, I'm [Your Name], the creator of Typing Clash! I'm a passionate developer with a love for building interactive and fun web applications. Based in [Your Location], I enjoy coding, gaming, and experimenting with new tech. This project was built to bring people together through a competitive typing experience. Connect with me on [Your Social Media] or [Your Email]!</p>
+            <img src="https://res.cloudinary.com/dnpudf84r/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1740920135/profile_fphqou.jpg"
+            style="width: 100px; height: 100px; border-radius: 50%;">
+            <p>
+            Hi, I'm <span class="glitter">Chayan</span>, and <span class="glitter">Grok</span> helped me create
+            Typing Clash—a real-time multiplayer typing competition game.
+
+            With Typing Clash, you can challenge your friends to a fast-paced typing battle. Simply create a game,
+            share the link, and compete in real-time to see who types the fastest. At the end of each match, the
+            results display everyone’s Words Per Minute (WPM), declaring the ultimate typing champion.
+
+            Visit our website to experience the thrill of competitive typing and improve your speed while having
+            fun!
+            </p>
+          
+            <p style="color: #ff6347; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-size: 1.4em;">If you want the source code, check out my GitHub:</p>
+            <a href="https://github.com/Chayanethic" target="_blank" rel="noopener">
+            <button class="iconButton">
+                <img src="https://cdn-icons-png.flaticon.com/128/733/733609.png" alt="GitHub" class="iconImage">
+            </button>
+            </a>
+            <a href="https://wa.me/919883995198" target="_blank" rel="noopener">
+            <button class="iconButton">
+                <img src="https://cdn-icons-png.flaticon.com/128/15713/15713434.png" alt="WhatsApp"
+                class="iconImage">
+            </button>
+            </a>
+<!--             <a href="https://askmeany.vercel.app" id="askMeBtn" target="_blank" rel="noopener">Ask Me</a> -->
+            <a href="https://askmeany.vercel.app" target="_blank" rel="noopener">
+                <button class="iconButton">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828817.png" alt="Ask Me" class="iconImage">
+                </button>
+            </a>
         </div>
+        <style>
+            .glitter {
+            background-image: linear-gradient(45deg, #f3ec78, #af4261);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: glitter 1.5s infinite;
+            }
+
+            @keyframes glitter {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+            }
+
+            .iconButton {
+            border: none;
+            background: none;
+            cursor: pointer;
+            animation: iconPulse 1.5s infinite;
+            }
+
+            .iconImage {
+            width: 32px;
+            height: 32px;
+            }
+
+            @keyframes iconPulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+            }
+        </style>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
