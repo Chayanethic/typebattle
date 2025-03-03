@@ -33,17 +33,12 @@ let isSoundEnabled = true;
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
+const typingSound = new Audio('/sounds/keypress.mp3');
 function playTypingSound() {
-    if (!isSoundEnabled) return;
-    const oscillator = audioContext.createOscillator();
-    const gainNode = audioContext.createGain();
-    oscillator.connect(gainNode);
-    gainNode.connect(audioContext.destination);
-    oscillator.type = 'square';
-    oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
-    gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
-    oscillator.start();
-    oscillator.stop(audioContext.currentTime + 0.05);
+    if (isSoundEnabled) {
+        typingSound.currentTime = 0; // Reset to start
+        typingSound.play();
+    }
 }
 
 createRoomBtn.addEventListener('click', () => {
@@ -133,8 +128,8 @@ startGameBtn.addEventListener('click', () => {
 soundToggleBtn.addEventListener('click', () => {
     isSoundEnabled = !isSoundEnabled;
     soundToggleBtn.classList.toggle('muted');
-    soundToggleBtn.querySelector('i').classList.toggle('fa-microphone');
-    soundToggleBtn.querySelector('i').classList.toggle('fa-microphone-slash');
+    soundToggleBtn.querySelector('i').classList.toggle('fa-volume-low');
+    soundToggleBtn.querySelector('i').classList.toggle('fa-volume-xmark');
 });
 
 function prepareGame(roomId, text, isSpectator) {
