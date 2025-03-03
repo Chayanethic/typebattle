@@ -14,9 +14,10 @@ const io = new Server(server, {
 app.use(express.static('public'));
 
 const sentences = [
-    "The quick brown fox jumps over the lazy dog.",
+    "Narula Institute of Technology is a premier educational institute in Kolkata. It is a part of JIS Educational Initiatives. Today, it ranks among the top private engineering college in Kolkata, West Bengal. Most of its eligible programs are NBA accredited.",
+    "Annada Mistanna Bhandar is a renowned sweet shop located in Kalyani, West Bengal. It is listed among the miscellaneous manufacturing companies in Nadia district.",
     "A journey of a thousand miles begins with a single step.",
-    "Life is what happens when you're busy making other plans."
+    "Life is what happens when you're busy making other plans."
 ];
 
 const rooms = {};
