@@ -16,8 +16,11 @@ app.use(express.static('public'));
 const sentences = [
     "Narula Institute of Technology is a premier educational institute in Kolkata. It is a part of JIS Educational Initiatives. Today, it ranks among the top private engineering college in Kolkata, West Bengal. Most of its eligible programs are NBA accredited.",
     "Annada Mistanna Bhandar is a renowned sweet shop located in Kalyani, West Bengal. It is listed among the miscellaneous manufacturing companies in Nadia district.",
-    "A journey of a thousand miles begins with a single step.",
-    "Life is what happens when you're busy making other plans."
+    "Despite the heavy rain and strong winds that threatened to uproot trees, the marathon runners continued their race with unwavering determination, each step echoing their resilience and passion for the sport.",
+    "In an era where technology is rapidly evolving and artificial intelligence is seamlessly integrating into various aspects of our daily lives, the debate about its ethical implications and long-term consequences continues to spark discussions among researchers, policymakers, and the general public.",
+    "The breathtaking view from the mountaintop, with the golden rays of the setting sun casting a warm glow over the vast, rolling hills and the winding river below, made the grueling five-hour hike feel entirely worth the effort.",
+    "As she flipped through the dusty pages of the ancient manuscript, she realized that the cryptic symbols and mysterious diagrams contained within were not just random scribbles but rather a forgotten language that held the secrets of a lost civilization.",
+    "With the deadline looming ever closer and the pressure mounting from both colleagues and superiors, he found himself struggling to balance perfection and efficiency, knowing that even the slightest mistake could result in a disastrous outcome.",
 ];
 
 const rooms = {};
